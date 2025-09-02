@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: gold;
+    }
+    section {
+      padding: 40px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    form input, form textarea, form button {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background: black;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: gold;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Store</h1>
+    <p>Style That Speaks</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Fashion Store</h2>
+    <p>Discover the latest trends in clothing, shoes, and accessories.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250?text=Dress" alt="Dress">
+        <h3>Elegant Dress</h3>
+        <p>$49.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250?text=Shoes" alt="Shoes">
+        <h3>Stylish Shoes</h3>
+        <p>$69.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250?text=Bag" alt="Bag">
+        <h3>Designer Bag</h3>
+        <p>$89.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Fashion Store, we believe fashion is more than just clothing—it’s a lifestyle. 
+      Our mission is to provide high-quality, trendy, and affordable fashion for everyone.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fashion Store | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
